@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Share Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>File Gallery</h1>
+        </div>
+
+        <!-- Upload Button -->
+        <div class="upload-section">
+            <input type="file" id="fileInput" multiple accept="image/*,video/*,.pdf,.doc,.docx,.zip">
+            <label for="fileInput" class="upload-btn">
+                <span class="plus-icon">+</span>
+            </label>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-container">
+            <div id="gallery" class="gallery"></div>
+        </div>
+    </div>
+
+    <!-- Modal for preview -->
+    <div id="previewModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <div id="modalBody"></div>
+            <div class="modal-actions">
+                <button id="downloadBtn" class="btn-download">Download</button>
+                <button id="deleteBtn" class="btn-delete">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
